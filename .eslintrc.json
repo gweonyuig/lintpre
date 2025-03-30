@@ -23,7 +23,6 @@
     "arrow-body-style": ["error", "as-needed"],
     "object-shorthand": "error",
     "no-param-reassign": "error",
-    "camelcase": "error",
     "no-nested-ternary": "error",
     "react/jsx-pascal-case": "error",
     "react/self-closing-comp": "error",
