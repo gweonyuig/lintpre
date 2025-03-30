@@ -22,10 +22,10 @@ export default function Footer({ svgPath }: IconMenuProps) {
         <p>운영시간 09:00 ~ 18:00 (주말 및 공휴일 휴무)</p>
       </div>
       <div className={styles.under_line}>
-        <span>Copyright ⓒ 2023. COMET All rights reserved.</span>
-        <div>
-          <span>이용약관 | 개인정보처리방침</span>
-          <span>고객센터 070-1234-5678</span>
+        <div>Copyright ⓒ 2023. COMET All rights reserved.</div>
+        <div className={styles.under_line_right}>
+          <div>이용약관 | 개인정보처리방침</div>
+          <div>고객센터 070-1234-5678</div>
         </div>
       </div>
     </footer>

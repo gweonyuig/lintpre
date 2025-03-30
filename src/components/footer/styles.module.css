@@ -29,3 +29,10 @@
     color: #505050;
     padding: 4px 40px;
 }
+.under_line_right{
+    display: flex;
+    align-items: center;
+}
+.under_line_right div{
+    padding: 0 8px;
+}
