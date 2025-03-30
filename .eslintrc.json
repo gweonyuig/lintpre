@@ -1,0 +1,32 @@
+{
+  "root": true,
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript",
+    "prettier" // 항상 마지막에 위치해야 함
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": ["tsconfig.json"],
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018
+  },
+  "plugins": ["prettier", "@typescript-eslint", "react"],
+  "rules": {
+    "prettier/prettier": "error",
+    // Airbnb 스타일에서 가져온 중요 규칙들
+    "no-console": "warn",
+    "no-unused-vars": "error",
+    "prefer-const": "error",
+    "arrow-body-style": ["error", "as-needed"],
+    "object-shorthand": "error",
+    "no-param-reassign": "error",
+    "camelcase": "error",
+    "no-nested-ternary": "error",
+    "react/jsx-pascal-case": "error",
+    "react/self-closing-comp": "error",
+    "react/jsx-no-useless-fragment": "error"
+  }
+}
