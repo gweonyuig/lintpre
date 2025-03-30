@@ -1,0 +1,33 @@
+import React from "react";
+import Image from "next/image";
+import styles from "./styles.module.css";
+
+interface IconMenuProps {
+  svgPath: string;
+}
+
+export default function Footer({ svgPath }: IconMenuProps) {
+  return (
+    <footer className={styles.footer}>
+      <div className={styles.title}>
+        <Image src={svgPath} alt="logo" width={42} height={42} />
+        COMET
+      </div>
+      <div className={styles.description}>
+        <p>대표자 이서준</p>
+        <p>전화번호 010-2514-5034</p>
+        <p>이메일 seojunlee27@naver.com</p>
+        <p>주소 충청남도 아산시 탕정면 선문로 221번길 70 인문관 301B</p>
+        <p>사업자 등록번호 123-45-67890</p>
+        <p>운영시간 09:00 ~ 18:00 (주말 및 공휴일 휴무)</p>
+      </div>
+      <div className={styles.under_line}>
+        <span>Copyright ⓒ 2023. COMET All rights reserved.</span>
+        <div>
+          <span>이용약관 | 개인정보처리방침</span>
+          <span>고객센터 070-1234-5678</span>
+        </div>
+      </div>
+    </footer>
+  );
+}
