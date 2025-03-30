@@ -31,14 +31,16 @@ export default async function Home() {
       </div>
       {/* 카테고리 */}
       <div className={styles.categoryContainer}>
-        <IconMenu svgPath="/icons/magic.svg" description="교열" />
-        <IconMenu svgPath="/icons/write.svg" description="창작하기" />
-        <IconMenu svgPath="/icons/book-open.svg" description="소설" />
-        <IconMenu svgPath="/icons/question-circle.svg" description="FAQ" />
+        <div className={styles.categories}>
+          <IconMenu svgPath="/icons/magic.svg" description="교열" />
+          <IconMenu svgPath="/icons/write.svg" description="창작하기" />
+          <IconMenu svgPath="/icons/book-open.svg" description="소설" />
+          <IconMenu svgPath="/icons/question-circle.svg" description="FAQ" />
+        </div>
       </div>
       <div />
       {/* 소설 목록 */}
-      <div>
+      <div className={styles.novelListContainer}>
         {/* Top 10 */}
         <NovelThumbnailList title="TOP 10" data={mainPageNovelData.top10} />
         <div style={{ marginBottom: "40px" }} />

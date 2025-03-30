@@ -1,5 +1,5 @@
 .container {
-  padding: 0 60px;
+  width: 60%;
 }
 
 .title {
@@ -13,7 +13,10 @@
 }
 
 .list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-auto-rows: 1fr;
+  grid-auto-flow: dense;
   gap: 12px;
   justify-content: space-between;
 }

@@ -9,8 +9,9 @@ interface IconMenuProps {
 export default function Footer({ svgPath }: IconMenuProps) {
   return (
     <footer className={styles.footer}>
+      <div className={styles.divider} />
       <div className={styles.title}>
-        <Image src={svgPath} alt="logo" width={42} height={42} />
+        <Image src={svgPath} alt="logo" width={24} height={24} />
         COMET
       </div>
       <div className={styles.description}>
