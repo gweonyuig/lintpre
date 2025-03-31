@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 
 export default function NovelThumbnailList({
   data,
-  title,
+  title
 }: {
   data: {
     title: string;
@@ -18,7 +18,7 @@ export default function NovelThumbnailList({
       <h3 className={styles.title}>{title}</h3>
       <div className={styles.divider} />
       <div className={styles.list}>
-        {data.map((item) => (
+        {data.map(item => (
           <div key={item.title} className={styles.item}>
             <Image
               src={item.thumbnail}
