@@ -24,7 +24,10 @@ export default async function Home() {
         <div className={styles.tryToDemo}>
           <div className={styles.tryToDemoTitle}>교열 해보기</div>
           <div className={styles.tryToDemoInputContainer}>
-            <input type="text" placeholder="책 제목을 입력해주세요" />
+            <input
+              type="text"
+              placeholder="책 제목을 입력해주세요"
+            />
             <div>📖</div>
           </div>
         </div>
@@ -32,23 +35,41 @@ export default async function Home() {
       {/* 카테고리 */}
       <div className={styles.categoryContainer}>
         <div className={styles.categories}>
-          <IconMenu svgPath="/icons/magic.svg" description="교열" />
-          <IconMenu svgPath="/icons/write.svg" description="창작하기" />
-          <IconMenu svgPath="/icons/book-open.svg" description="소설" />
-          <IconMenu svgPath="/icons/question-circle.svg" description="FAQ" />
+          <IconMenu
+            svgPath="/icons/magic.svg"
+            description="교열"
+          />
+          <IconMenu
+            svgPath="/icons/write.svg"
+            description="창작하기"
+          />
+          <IconMenu
+            svgPath="/icons/book-open.svg"
+            description="소설"
+          />
+          <IconMenu
+            svgPath="/icons/question-circle.svg"
+            description="FAQ"
+          />
         </div>
       </div>
       <div />
       {/* 소설 목록 */}
       <div className={styles.novelListContainer}>
         {/* Top 10 */}
-        <NovelThumbnailList title="TOP 10" data={mainPageNovelData.top10} />
+        <NovelThumbnailList
+          title="TOP 10"
+          data={mainPageNovelData.top10}
+        />
         <div style={{ marginBottom: "40px" }} />
         {/* 추천 */}
-        <NovelThumbnailList title="추천" data={mainPageNovelData.recommend} />
+        <NovelThumbnailList
+          title="추천"
+          data={mainPageNovelData.recommend}
+        />
         <div style={{ marginBottom: "360px" }} />
       </div>
-      <Footer svgPath="/icons/comet-logo.svg" />
+      <Footer />
     </div>
   );
 }
