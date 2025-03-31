@@ -3,7 +3,6 @@ import styles from "./page.module.css";
 import IconMenu from "@/components/icon-menu";
 import NovelThumbnailList from "@/components/novel-thumbnail-list";
 import { getMainPageNovelData } from "./actions";
-import Footer from "@/components/footer";
 
 export default async function Home() {
   const mainPageNovelData = await getMainPageNovelData();
@@ -69,7 +68,6 @@ export default async function Home() {
         />
         <div style={{ marginBottom: "360px" }} />
       </div>
-      <Footer />
     </div>
   );
 }
