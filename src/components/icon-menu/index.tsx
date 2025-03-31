@@ -10,7 +10,12 @@ export default function IconMenu({ svgPath, description }: IconMenuProps) {
   return (
     <div className={styles.container}>
       <div className={styles.iconWrapper}>
-        <Image src={svgPath} alt="icon" width={24} height={24} />
+        <Image
+          src={svgPath}
+          alt="icon"
+          width={24}
+          height={24}
+        />
       </div>
       <div>{description}</div>
     </div>
