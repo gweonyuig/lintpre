@@ -2,16 +2,17 @@ import React from "react";
 import Image from "next/image";
 import styles from "./styles.module.css";
 
-interface IconMenuProps {
-  svgPath: string;
-}
-
-export default function Footer({ svgPath }: IconMenuProps) {
+export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.divider} />
       <div className={styles.title}>
-        <Image src={svgPath} alt="logo" width={24} height={24} />
+        <Image
+          src="/icons/comet-logo.png"
+          alt="logo"
+          width={24}
+          height={24}
+        />
         COMET
       </div>
       <div className={styles.description}>
